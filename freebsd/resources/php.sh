@@ -35,6 +35,30 @@ if [ ."$php_version" = ."8.1" ]; then
 	pkg install --yes php81-zlib php81-filter php81-curl php81-mbstring
  	pkg install --yes php81-pdo_pgsql php81-pgsql
 fi
+if [ ."$php_version" = ."8.2" ]; then
+	pkg install --yes php82 php82-phar php82-pdo php82-pdo_odbc php82-pdo_sqlite php82-gd php82-imap
+	pkg install --yes php82-ldap php82-sockets php82-simplexml php82-xml php82-session php82-iconv
+	pkg install --yes php82-zlib php82-filter php82-curl php82-mbstring
+ 	pkg install --yes php82-pdo_pgsql php82-pgsql
+fi
+if [ ."$php_version" = ."8.3" ]; then
+	pkg install --yes php83 php83-phar php83-pdo php83-pdo_odbc php83-pdo_sqlite php83-gd php83-imap
+	pkg install --yes php83-ldap php83-sockets php83-simplexml php83-xml php83-session php83-iconv
+	pkg install --yes php83-zlib php83-filter php83-curl php83-mbstring
+ 	pkg install --yes php83-pdo_pgsql php83-pgsql
+fi
+if [ ."$php_version" = ."8.4" ]; then
+	pkg install --yes php84 php84-phar php84-pdo php84-pdo_odbc php84-pdo_sqlite php84-gd php84-imap
+	pkg install --yes php84-ldap php84-sockets php84-simplexml php84-xml php84-session php84-iconv
+	pkg install --yes php84-zlib php84-filter php84-curl php84-mbstring
+ 	pkg install --yes php84-pdo_pgsql php84-pgsql
+fi
+if [ ."$php_version" = ."8.5" ]; then
+	pkg install --yes php85 php85-phar php85-pdo php85-pdo_odbc php85-pdo_sqlite php85-gd php85-imap
+	pkg install --yes php85-ldap php85-sockets php85-simplexml php85-xml php85-session php85-iconv
+	pkg install --yes php85-zlib php85-filter php85-curl php85-mbstring
+ 	pkg install --yes php85-pdo_pgsql php85-pgsql
+fi
 #send a message
 verbose "Configuring PHP"
 
