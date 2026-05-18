@@ -127,7 +127,7 @@ if [ ."$switch_branch" != ."master" ] && [ ."$switch_branch" = ."stable" ]; then
 
 		# Get the stable branch
 		git checkout v$switch_version
-	end
+	fi
 
 	# Get the source code using git
 	if [ ."$switch_version" == ."1.10.12" ]; then
@@ -138,7 +138,7 @@ if [ ."$switch_branch" != ."master" ] && [ ."$switch_branch" = ."stable" ]; then
 
 		# Get the stable branch
 		git checkout $switch_version
-	end
+	fi
 
 	# Reset repo just-in-case we are rebuilding
 	#git reset --hard origin/master && git clean -fdx
